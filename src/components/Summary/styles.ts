@@ -18,7 +18,7 @@ interface SummaryCardProps {
 export const SummaryCard = styled.div<SummaryCardProps>`
   background: ${({ theme }) => theme.colors["gray-600"]};
   border-radius: 6px;
-  padding: 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
   header {
     display: flex;
     align-items: center;
@@ -27,8 +27,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   }
   strong {
     display: block;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     font-size: 2rem;
+    line-height: 140%;
   }
   ${({ variant }) => variant === "green" && css`
     background: ${({ theme }) => theme.colors["green-700"]}
