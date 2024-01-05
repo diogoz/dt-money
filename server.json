@@ -5,7 +5,7 @@
       "description": "Salário",
       "type": "income",
       "category": "Renda",
-      "price": 3000.00,
+      "price": 3000,
       "createdAt": "2024-01-02T08:00:00"
     },
     {
@@ -13,7 +13,7 @@
       "description": "Pagamento do aluguel",
       "type": "outcome",
       "category": "Moradia",
-      "price": 800.00,
+      "price": 800,
       "createdAt": "2024-01-05T15:30:00"
     },
     {
@@ -21,7 +21,7 @@
       "description": "Compras no supermercado",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 150.00,
+      "price": 150,
       "createdAt": "2024-01-10T12:45:00"
     },
     {
@@ -29,7 +29,7 @@
       "description": "Freelance",
       "type": "income",
       "category": "Renda",
-      "price": 500.00,
+      "price": 500,
       "createdAt": "2024-01-15T09:15:00"
     },
     {
@@ -37,7 +37,7 @@
       "description": "Gastos com transporte",
       "type": "outcome",
       "category": "Transporte",
-      "price": 50.00,
+      "price": 50,
       "createdAt": "2024-01-18T17:20:00"
     },
     {
@@ -45,7 +45,7 @@
       "description": "Jantar fora",
       "type": "outcome",
       "category": "Lazer",
-      "price": 80.00,
+      "price": 80,
       "createdAt": "2024-01-22T20:30:00"
     },
     {
@@ -53,7 +53,7 @@
       "description": "Reembolso médico",
       "type": "income",
       "category": "Renda",
-      "price": 200.00,
+      "price": 200,
       "createdAt": "2024-01-25T14:10:00"
     },
     {
@@ -61,7 +61,7 @@
       "description": "Eletrônicos",
       "type": "outcome",
       "category": "Compras",
-      "price": 300.00,
+      "price": 300,
       "createdAt": "2024-01-28T11:45:00"
     },
     {
@@ -69,8 +69,24 @@
       "description": "Bônus anual",
       "type": "income",
       "category": "Renda",
-      "price": 1000.00,
+      "price": 1000,
       "createdAt": "2024-02-01T08:00:00"
+    },
+    {
+      "description": "Teste",
+      "category": "Supermecado",
+      "price": 24,
+      "type": "outcome",
+      "createdAt": "2024-01-05T18:36:45.761Z",
+      "id": 10
+    },
+    {
+      "description": "afsafsafa",
+      "category": "Supermecado",
+      "price": 20000,
+      "type": "outcome",
+      "createdAt": "2024-01-05T18:37:20.084Z",
+      "id": 11
     }
   ]
 }
