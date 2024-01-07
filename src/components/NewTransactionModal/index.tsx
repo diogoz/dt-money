@@ -7,6 +7,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { useContextSelector } from "use-context-selector";
 
+interface NewTransactionModalProps {
+  handleTransactionModalOpenChange: (value: boolean) => void;
+}
+
+
 const newTransactionFormSchema = zod.object({
   description: zod.string(),
   price: zod.number(),
@@ -17,7 +22,8 @@ const newTransactionFormSchema = zod.object({
 type newTransactionFormInputs = zod.infer<typeof newTransactionFormSchema>
 
 
-export function NewTransactionModal() {
+export function NewTransactionModal({ handleTransactionModalOpenChange }: NewTransactionModalProps) {
+
   const createNewTransaction = useContextSelector(TransactionsContext, (context) => {
     return context.createNewTransaction
   })
@@ -28,6 +34,7 @@ export function NewTransactionModal() {
   async function handleCreateNewTransaction(data: newTransactionFormInputs) {
     await createNewTransaction(data)
     reset()
+    handleTransactionModalOpenChange(false)
   }
 
   return (
@@ -64,8 +71,6 @@ export function NewTransactionModal() {
               )
             }}
           />
-
-
           <button type="submit" disabled={isSubmitting}>
             Cadastrar
           </button>

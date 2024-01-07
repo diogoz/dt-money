@@ -71,22 +71,6 @@
       "category": "Renda",
       "price": 1000,
       "createdAt": "2024-02-01T08:00:00"
-    },
-    {
-      "description": "Teste",
-      "category": "Supermecado",
-      "price": 24,
-      "type": "outcome",
-      "createdAt": "2024-01-05T18:36:45.761Z",
-      "id": 10
-    },
-    {
-      "description": "afsafsafa",
-      "category": "Supermecado",
-      "price": 20000,
-      "type": "outcome",
-      "createdAt": "2024-01-05T18:37:20.084Z",
-      "id": 11
     }
   ]
 }
